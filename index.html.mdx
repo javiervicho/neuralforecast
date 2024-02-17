@@ -1,12 +1,13 @@
 ---
-description: '**NeuralForecast** offers a large collection of neural forecasting models
-  focused on their usability, and robustness. The models range from classic networks
-  like `MLP`, `RNN`s to novel proven contributions like `NBEATS`, `NHITS`, `TFT` and
-  other architectures.'
+description: >-
+  **NeuralForecast** offers a large collection of neural forecasting models
+  focused on their usability, and robustness. The models range from classic
+  networks like `MLP`, `RNN`s to novel proven contributions like `NBEATS`,
+  `NHITS`, `TFT` and other architectures.
 output-file: index.html
 title: "\U0001F9E0 NeuralForecast"
-
 ---
+
 
 ## 🎊 Features
 
@@ -117,8 +118,8 @@ Y_test_df = Y_df[Y_df.ds>'1959-12-31'] # 12 test
 
 # Fit and predict with NBEATS and NHITS models
 horizon = len(Y_test_df)
-models = [NBEATS(input_size=2 * horizon, h=horizon, max_epochs=50),
-          NHITS(input_size=2 * horizon, h=horizon, max_epochs=50)]
+models = [NBEATS(input_size=2 * horizon, h=horizon, max_steps=50),
+          NHITS(input_size=2 * horizon, h=horizon, max_steps=50)]
 nf = NeuralForecast(models=models, freq='M')
 nf.fit(df=Y_train_df)
 Y_hat_df = nf.predict().reset_index()

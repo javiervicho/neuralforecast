@@ -1,8 +1,8 @@
 ---
 output-file: models.dilated_rnn.html
 title: Dilated RNN
-
 ---
+
 
 The Dilated Recurrent Neural Network
 ([`DilatedRNN`](https://Nixtla.github.io/neuralforecast/models.dilated_rnn.html#dilatedrnn))
@@ -31,8 +31,12 @@ prediction”.](https://arxiv.org/abs/1704.02971)<br/>-[Kashif Rasul, et
 al. “Zalando Research: PyTorch Dilated Recurrent Neural
 Networks”.](https://arxiv.org/abs/1710.02224)<br/>
 
-![Figure 1. Three layer DilatedRNN with dilation 1, 2,
-4.](/imgs_models/dilated_rnn.png)
+<figure>
+<img src="imgs_models/dilated_rnn.png"
+alt="Figure 1. Three layer DilatedRNN with dilation 1, 2, 4." />
+<figcaption aria-hidden="true">Figure 1. Three layer DilatedRNN with
+dilation 1, 2, 4.</figcaption>
+</figure>
 
 ------------------------------------------------------------------------
 
@@ -97,7 +101,7 @@ used by `TimeSeriesDataLoader`.<br/> `drop_last_loader`: bool=False, if
 True `TimeSeriesDataLoader` drops last non-full batch.<br/> `alias`: str,
 optional, Custom name of the model.<br/> `**trainer_kwargs`: int, keyword
 trainer arguments inherited from [PyTorch Lighning’s
-trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer).<br/>
+trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.trainer.html?highlight=trainer).<br/>
 
 ## Usage Example
 

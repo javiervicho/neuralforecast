@@ -1,8 +1,8 @@
 ---
 output-file: models.autoformer.html
 title: Autoformer
-
 ---
+
 
 The Autoformer model tackles the challenge of finding reliable
 dependencies on intricate temporal patterns of long-horizon forecasting.
@@ -23,9 +23,14 @@ calendar features are utilized.
 **References**<br/> - [Wu, Haixu, Jiehui Xu, Jianmin Wang, and Mingsheng
 Long. “Autoformer: Decomposition transformers with auto-correlation for
 long-term series
-forecasting”](https://proceedings.neurips.cc/paper/2021/hash/bcc0d400288793e8bdcd7c19a8ac0c2b-Abstract.html)<br/>
+forecasting”](https://proceedings.neurips.cc/paper/2021/hash/bcc0d400288793e8bdcd7c19a8ac0c2b-abstract.html)<br/>
 
-![Figure 1. Autoformer Architecture.](/imgs_models/autoformer.png)
+<figure>
+<img src="imgs_models/autoformer.png"
+alt="Figure 1. Autoformer Architecture." />
+<figcaption aria-hidden="true">Figure 1. Autoformer
+Architecture.</figcaption>
+</figure>
 
 ## 1. Auxiliary Functions
 
@@ -282,11 +287,11 @@ used by `TimeSeriesDataLoader`.<br/> `drop_last_loader`: bool=False, if
 True `TimeSeriesDataLoader` drops last non-full batch.<br/> `alias`: str,
 optional, Custom name of the model.<br/> `**trainer_kwargs`: int, keyword
 trainer arguments inherited from [PyTorch Lighning’s
-trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer).<br/>
+trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.trainer.html?highlight=trainer).<br/>
 
 ``` text
 *References*<br/>
-- [Wu, Haixu, Jiehui Xu, Jianmin Wang, and Mingsheng Long. "Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting"](https://proceedings.neurips.cc/paper/2021/hash/bcc0d400288793e8bdcd7c19a8ac0c2b-Abstract.html)<br/>
+- [Wu, Haixu, Jiehui Xu, Jianmin Wang, and Mingsheng Long. "Autoformer: Decomposition transformers with auto-correlation for long-term series forecasting"](https://proceedings.neurips.cc/paper/2021/hash/bcc0d400288793e8bdcd7c19a8ac0c2b-abstract.html)<br/>
 ```
 
 ------------------------------------------------------------------------
@@ -304,7 +309,7 @@ initialization parameters (`learning_rate`, `windows_batch_size`, …) and
 the `loss` function as defined during the initialization. Within `fit`
 we use a PyTorch Lightning `Trainer` that inherits the initialization’s
 `self.trainer_kwargs`, to customize its inputs, see [PL’s trainer
-arguments](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer).
+arguments](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.trainer.html?highlight=trainer).
 
 The method is designed to be compatible with SKLearn-like classes and in
 particular to be compatible with the StatsForecast library.

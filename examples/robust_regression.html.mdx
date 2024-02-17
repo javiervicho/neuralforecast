@@ -1,8 +1,8 @@
 ---
 output-file: robust_regression.html
 title: Outlier Robust Forecasting
-
 ---
+
 
 When outliers are present in a dataset, they can disrupt the calculated
 summary statistics, such as the mean and standard deviation, leading the
@@ -10,7 +10,7 @@ model to favor the outlier values and deviate from most observations.
 Consequently, models need help in achieving a balance between accurately
 accommodating outliers and performing well on normal data, resulting in
 improved overall performance on both types of data. [Robust regression
-algorithms](https://en.wikipedia.org/wiki/Robust_regression) tackle this
+algorithms](https://en.wikipedia.org/wiki/robust_regression) tackle this
 issue, explicitly accounting for outliers in the dataset.
 
 In this notebook we will show how to fit robust NeuralForecast methods.
@@ -67,7 +67,7 @@ plt.xlabel('Timestamp [t]')
 plt.grid()
 ```
 
-![](/examples/Robust_Regression_files/figure-markdown_strict/cell-4-output-1.png)
+![](/neuralforecast/examples/Robust_Regression_files/figure-markdown_strict/cell-4-output-1.png)
 
 ```python
 # Here we add some artificial outliers to AirPassengers
@@ -83,7 +83,7 @@ plt.xlabel('Timestamp [t]')
 plt.grid()
 ```
 
-![](/examples/Robust_Regression_files/figure-markdown_strict/cell-5-output-1.png)
+![](/neuralforecast/examples/Robust_Regression_files/figure-markdown_strict/cell-5-output-1.png)
 
 ```python
 # Split datasets into train/test 
@@ -231,7 +231,7 @@ ax.legend(prop={'size': 15})
 ax.grid()
 ```
 
-![](/examples/Robust_Regression_files/figure-markdown_strict/cell-9-output-1.png)
+![](/neuralforecast/examples/Robust_Regression_files/figure-markdown_strict/cell-9-output-1.png)
 
 To evaluate the median predictions we use the mean average percentage
 error (MAPE), defined as follows:

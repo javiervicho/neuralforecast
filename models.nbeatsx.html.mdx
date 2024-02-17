@@ -1,8 +1,8 @@
 ---
 output-file: models.nbeatsx.html
 title: NBEATSx
-
 ---
+
 
 The Neural Basis Expansion Analysis
 ([`NBEATS`](https://Nixtla.github.io/neuralforecast/models.nbeats.html#nbeats))
@@ -34,8 +34,12 @@ Cristian Challu, Grzegorz Marcjasz, Rafał Weron, Artur Dubrawski (2021).
 “Neural basis expansion analysis with exogenous variables: Forecasting
 electricity prices with NBEATSx”.](https://arxiv.org/abs/2104.05522)<br/>
 
-![Figure 1. Neural Basis Expansion Analysis with Exogenous
-Variables.](/imgs_models/nbeatsx.png)
+<figure>
+<img src="imgs_models/nbeatsx.png"
+alt="Figure 1. Neural Basis Expansion Analysis with Exogenous Variables." />
+<figcaption aria-hidden="true">Figure 1. Neural Basis Expansion Analysis
+with Exogenous Variables.</figcaption>
+</figure>
 
 ------------------------------------------------------------------------
 
@@ -124,7 +128,7 @@ scalers](https://nixtla.github.io/neuralforecast/common.scalers.html).<br/>
 `TimeSeriesDataLoader` drops last non-full batch.<br/> `alias`: str,
 optional, Custom name of the model.<br/> `**trainer_kwargs`: int, keyword
 trainer arguments inherited from [PyTorch Lighning’s
-trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer).<br/>
+trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.trainer.html?highlight=trainer).<br/>
 
 **References:**<br/> -[Kin G. Olivares, Cristian Challu, Grzegorz
 Marcjasz, Rafał Weron, Artur Dubrawski (2021). “Neural basis expansion
@@ -146,7 +150,7 @@ initialization parameters (`learning_rate`, `windows_batch_size`, …) and
 the `loss` function as defined during the initialization. Within `fit`
 we use a PyTorch Lightning `Trainer` that inherits the initialization’s
 `self.trainer_kwargs`, to customize its inputs, see [PL’s trainer
-arguments](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer).
+arguments](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.trainer.html?highlight=trainer).
 
 The method is designed to be compatible with SKLearn-like classes and in
 particular to be compatible with the StatsForecast library.

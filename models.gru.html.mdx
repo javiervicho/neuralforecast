@@ -1,8 +1,8 @@
 ---
 output-file: models.gru.html
 title: GRU
-
 ---
+
 
 Cho et. al proposed the Gated Recurrent Unit
 ([`GRU`](https://Nixtla.github.io/neuralforecast/models.gru.html#gru))
@@ -29,7 +29,12 @@ Networks on Sequence Modeling”.](https:arxivorg/abs/1412.3555)<br/>
 (2014). “On the Properties of Neural Machine Translation:
 Encoder-Decoder Approaches”.](https://arxiv.org/abs/1409.1259)<br/>
 
-![Figure 1. Gated Recurrent Unit Cell.](/imgs_models/gru.png)
+<figure>
+<img src="imgs_models/gru.png"
+alt="Figure 1. Gated Recurrent Unit Cell." />
+<figcaption aria-hidden="true">Figure 1. Gated Recurrent Unit
+Cell.</figcaption>
+</figure>
 
 ------------------------------------------------------------------------
 
@@ -104,7 +109,7 @@ used by `TimeSeriesDataLoader`.<br/> `drop_last_loader`: bool=False, if
 True `TimeSeriesDataLoader` drops last non-full batch.<br/> `alias`: str,
 optional, Custom name of the model.<br/> `**trainer_kwargs`: int, keyword
 trainer arguments inherited from [PyTorch Lighning’s
-trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer).<br/>
+trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.trainer.html?highlight=trainer).<br/>
 
 ------------------------------------------------------------------------
 
@@ -121,7 +126,7 @@ initialization parameters (`learning_rate`, `batch_size`, …) and the
 `loss` function as defined during the initialization. Within `fit` we
 use a PyTorch Lightning `Trainer` that inherits the initialization’s
 `self.trainer_kwargs`, to customize its inputs, see [PL’s trainer
-arguments](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer).
+arguments](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.trainer.html?highlight=trainer).
 
 The method is designed to be compatible with SKLearn-like classes and in
 particular to be compatible with the StatsForecast library.

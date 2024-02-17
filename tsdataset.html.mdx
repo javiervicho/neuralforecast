@@ -2,13 +2,13 @@
 description: Torch Dataset for Time Series
 output-file: tsdataset.html
 title: PyTorch Dataset/Loader
-
 ---
+
 
 ------------------------------------------------------------------------
 
 <a
-href="https://github.com/Nixtla/neuralforecast/blob/main/neuralforecast/tsdataset.py#L18"
+href="https://github.com/Nixtla/neuralforecast/blob/main/neuralforecast/tsdataset.py#L19"
 target="_blank" style={{ float: "right", fontSize: "smaller" }}>source</a>
 
 ### TimeSeriesLoader
@@ -39,15 +39,15 @@ specified.<br/>
 ------------------------------------------------------------------------
 
 <a
-href="https://github.com/Nixtla/neuralforecast/blob/main/neuralforecast/tsdataset.py#L73"
+href="https://github.com/Nixtla/neuralforecast/blob/main/neuralforecast/tsdataset.py#L76"
 target="_blank" style={{ float: "right", fontSize: "smaller" }}>source</a>
 
 ### TimeSeriesDataset
 
 > ``` text
 >  TimeSeriesDataset (temporal, temporal_cols, indptr, max_size:int,
->                     min_size:int, static=None, static_cols=None,
->                     sorted=False)
+>                     min_size:int, y_idx:int, static=None,
+>                     static_cols=None, sorted=False)
 > ```
 
 An abstract class representing a :class:`Dataset`.
@@ -63,7 +63,7 @@ implement :meth:`__getitems__`, for speedup batched samples loading.
 This method accepts list of indices of samples of batch and returns list
 of samples.
 
-.. note:: :class:`~torch.utils.data.DataLoader` by default constructs a
+.. note:: :class:`~torch.utils.data.DataLoader` by default constructs an
 index sampler that yields integral indices. To make it work with a
 map-style dataset with non-integral indices/keys, a custom sampler must
 be provided.
@@ -71,7 +71,7 @@ be provided.
 ------------------------------------------------------------------------
 
 <a
-href="https://github.com/Nixtla/neuralforecast/blob/main/neuralforecast/tsdataset.py#L311"
+href="https://github.com/Nixtla/neuralforecast/blob/main/neuralforecast/tsdataset.py#L344"
 target="_blank" style={{ float: "right", fontSize: "smaller" }}>source</a>
 
 ### TimeSeriesDataModule

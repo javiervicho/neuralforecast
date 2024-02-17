@@ -1,10 +1,11 @@
 ---
-description: NeuralForecast contains a collection PyTorch Loss classes aimed to be
-  used during the models' optimization.
+description: >-
+  NeuralForecast contains a collection PyTorch Loss classes aimed to be used
+  during the models' optimization.
 output-file: losses.pytorch.html
 title: PyTorch Losses
-
 ---
+
 
 The most important train signal is the forecast error, which is the
 difference between the observed value $y_{\tau}$ and the prediction
@@ -88,7 +89,7 @@ in loss.<br/>
 [`mae`](https://Nixtla.github.io/neuralforecast/losses.numpy.html#mae):
 tensor (single value).
 
-![](/imgs_losses/mae_loss.png)
+![](/neuralforecast/imgs_losses/mae_loss.png)
 
 ## Mean Squared Error (MSE)
 
@@ -137,7 +138,7 @@ in loss.<br/>
 [`mse`](https://Nixtla.github.io/neuralforecast/losses.numpy.html#mse):
 tensor (single value).
 
-![](/imgs_losses/mse_loss.png)
+![](/neuralforecast/imgs_losses/mse_loss.png)
 
 ## Root Mean Squared Error (RMSE)
 
@@ -189,7 +190,7 @@ in loss.<br/>
 [`rmse`](https://Nixtla.github.io/neuralforecast/losses.numpy.html#rmse):
 tensor (single value).
 
-![](/imgs_losses/rmse_loss.png)
+![](/neuralforecast/imgs_losses/rmse_loss.png)
 
 # 2. Percentage errors
 
@@ -248,7 +249,7 @@ consider in loss.<br/>
 [`mape`](https://Nixtla.github.io/neuralforecast/losses.numpy.html#mape):
 tensor (single value).
 
-![](/imgs_losses/mape_loss.png)
+![](/neuralforecast/imgs_losses/mape_loss.png)
 
 ## Symmetric MAPE (sMAPE)
 
@@ -339,10 +340,10 @@ of the forecasting window. <br/>
 
 **References:**<br/> [Rob J. Hyndman, & Koehler, A. B. “Another look at
 measures of forecast
-accuracy”.](https://www.sciencedirect.com/science/article/pii/S0169207006000239)<br/>
+accuracy”.](https://www.sciencedirect.com/science/article/pii/s0169207006000239)<br/>
 [Spyros Makridakis, Evangelos Spiliotis, Vassilios Assimakopoulos, “The
 M4 Competition: 100,000 time series and 61 forecasting
-methods”.](https://www.sciencedirect.com/science/article/pii/S0169207019301128)
+methods”.](https://www.sciencedirect.com/science/article/pii/s0169207019301128)
 
 ------------------------------------------------------------------------
 
@@ -367,7 +368,7 @@ stamps per serie to consider in loss.<br/>
 [`mase`](https://Nixtla.github.io/neuralforecast/losses.numpy.html#mase):
 tensor (single value).
 
-![](/imgs_losses/mase_loss.png)
+![](/neuralforecast/imgs_losses/mase_loss.png)
 
 ## Relative Mean Squared Error (relMSE)
 
@@ -398,7 +399,7 @@ forecasting window. <br/>
 **References:**<br/> - [Hyndman, R. J and Koehler, A. B. (2006). “Another
 look at measures of forecast accuracy”, International Journal of
 Forecasting, Volume 22, Issue
-4.](https://www.sciencedirect.com/science/article/pii/S0169207006000239)<br/> -
+4.](https://www.sciencedirect.com/science/article/pii/s0169207006000239)<br/> -
 [Kin G. Olivares, O. Nganba Meetei, Ruijun Ma, Rohan Reddy, Mengfei Cao,
 Lee Dicker. “Probabilistic Hierarchical Forecasting with Deep Poisson
 Mixtures. Submitted to the International Journal Forecasting, Working
@@ -494,7 +495,7 @@ in loss.<br/>
 [`quantile_loss`](https://Nixtla.github.io/neuralforecast/losses.numpy.html#quantile_loss):
 tensor (single value).
 
-![](/imgs_losses/q_loss.png)
+![](/neuralforecast/imgs_losses/q_loss.png)
 
 ## Multi Quantile Loss (MQLoss)
 
@@ -560,7 +561,7 @@ consider in loss.<br/>
 [`mqloss`](https://Nixtla.github.io/neuralforecast/losses.numpy.html#mqloss):
 tensor (single value).
 
-![](/imgs_losses/mq_loss.png)
+![](/neuralforecast/imgs_losses/mq_loss.png)
 
 ## DistributionLoss
 
@@ -606,7 +607,7 @@ StudentT.](https://pytorch.org/docs/stable/distributions.html#studentt)<br/> -
 [David Salinas, Valentin Flunkert, Jan Gasthaus, Tim Januschowski
 (2020). “DeepAR: Probabilistic forecasting with autoregressive recurrent
 networks”. International Journal of
-Forecasting.](https://www.sciencedirect.com/science/article/pii/S0169207019301888)<br/>
+Forecasting.](https://www.sciencedirect.com/science/article/pii/s0169207019301888)<br/>
 
 ------------------------------------------------------------------------
 
@@ -752,7 +753,7 @@ target="_blank" style={{ float: "right", fontSize: "smaller" }}>source</a>
 
 Call self as a function.
 
-![](/imgs_losses/pmm.png)
+![](/neuralforecast/imgs_losses/pmm.png)
 
 ## Gaussian Mixture Mesh (GMM)
 
@@ -841,7 +842,7 @@ target="_blank" style={{ float: "right", fontSize: "smaller" }}>source</a>
 
 Call self as a function.
 
-![](/imgs_losses/gmm.png)
+![](/neuralforecast/imgs_losses/gmm.png)
 
 ## Negative Binomial Mixture Mesh (NBMM)
 
@@ -996,7 +997,7 @@ consider in loss.<br/>
 
 **Returns:**<br/> `huber_loss`: tensor (single value).
 
-![](/imgs_losses/huber_loss.png)
+![](/neuralforecast/imgs_losses/huber_loss.png)
 
 ## Tukey Loss
 
@@ -1064,7 +1065,7 @@ consider in loss.<br/>
 
 **Returns:**<br/> `tukey_loss`: tensor (single value).
 
-![](/imgs_losses/tukey_loss.png)
+![](/neuralforecast/imgs_losses/tukey_loss.png)
 
 ## Huberized Quantile Loss
 
@@ -1131,7 +1132,7 @@ in loss.<br/>
 
 **Returns:**<br/> `huber_qloss`: tensor (single value).
 
-![](/imgs_losses/huber_qloss.png)
+![](/neuralforecast/imgs_losses/huber_qloss.png)
 
 ## Huberized MQLoss
 
@@ -1197,7 +1198,7 @@ consider in loss.<br/>
 
 **Returns:**<br/> `hmqloss`: tensor (single value).
 
-![](/imgs_losses/hmq_loss.png)
+![](/neuralforecast/imgs_losses/hmq_loss.png)
 
 # 6. Others
 
@@ -1280,12 +1281,12 @@ prediction intervals (Defaults median). `quantiles`: float list \[0.,
 
 **References:**<br/> - [Gneiting, Tilmann. (2011). “Quantiles as optimal
 point forecasts”. International Journal of
-Forecasting.](https://www.sciencedirect.com/science/article/pii/S0169207010000063)<br/> -
+Forecasting.](https://www.sciencedirect.com/science/article/pii/s0169207010000063)<br/> -
 [Spyros Makridakis, Evangelos Spiliotis, Vassilios Assimakopoulos, Zhi
 Chen, Anil Gaba, Ilia Tsetlin, Robert L. Winkler. (2022). “The M5
 uncertainty competition: Results, findings and conclusions”.
 International Journal of
-Forecasting.](https://www.sciencedirect.com/science/article/pii/S0169207021001722)<br/> -
+Forecasting.](https://www.sciencedirect.com/science/article/pii/s0169207021001722)<br/> -
 [Syama Sundar Rangapuram, Lucien D Werner, Konstantinos Benidis, Pedro
 Mercado, Jan Gasthaus, Tim Januschowski. (2021). “End-to-End Learning of
 Coherent Probabilistic Forecasts for Hierarchical Time Series”.

@@ -1,8 +1,8 @@
 ---
 output-file: models.fedformer.html
 title: FEDformer
-
 ---
+
 
 The FEDformer model tackles the challenge of finding reliable
 dependencies on intricate temporal patterns of long-horizon forecasting.
@@ -24,7 +24,12 @@ Liang Sun, and Rong Jin.. “FEDformer: Frequency enhanced decomposed
 transformer for long-term series
 forecasting”](https://proceedings.mlr.press/v162/zhou22g.html)<br/>
 
-![Figure 1. FEDformer Architecture.](/imgs_models/fedformer.png)
+<figure>
+<img src="imgs_models/fedformer.png"
+alt="Figure 1. FEDformer Architecture." />
+<figcaption aria-hidden="true">Figure 1. FEDformer
+Architecture.</figcaption>
+</figure>
 
 ## 1. Auxiliary functions
 
@@ -369,7 +374,7 @@ used by `TimeSeriesDataLoader`.<br/> `drop_last_loader`: bool=False, if
 True `TimeSeriesDataLoader` drops last non-full batch.<br/> `alias`: str,
 optional, Custom name of the model.<br/> `**trainer_kwargs`: int, keyword
 trainer arguments inherited from [PyTorch Lighning’s
-trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.Trainer.html?highlight=trainer).<br/>
+trainer](https://pytorch-lightning.readthedocs.io/en/stable/api/pytorch_lightning.trainer.trainer.trainer.html?highlight=trainer).<br/>
 
 ```python
 import numpy as np
